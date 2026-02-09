@@ -6,8 +6,8 @@
     <!-- METADATA GOES HERE -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Assignment 1</title>
-    <link href="style.css" rel="stylesheet">
+    <title>Assignment #1: Storytelling Via Data Visualization - INTR2012 Interface Development - Mekaeda Buckle</title>
+    <link href="style.css" rel="stylesheet"></link>
 
     <!-- BOOTSTRAP 5 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
@@ -15,10 +15,10 @@
         </script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    
+
     <!-- P5 -->
     <script src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/p5.min.js"></script>
-  
+
     <!-- CHART.JS -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
@@ -31,9 +31,211 @@
 
 <body>
 
-    <!-- CONTENT GOES HERE -->
-    <h1>Hello, world!</h1>
+    <div class="container-fluid">
+    
+        <div class="row">
+            <div class="hero col-12 ps-5">
+                <h1>Do You Think <em>Aliens</em> Exist?</h1>
+                <p class="herotext">A short conversation about the possibility of life beyond our world.</p>
+            </div>
+        </div>
 
+        <div class="row">
+            <div class=" heroimage col-12 mt-3" style="background-image: url(Alien\ Ships\ Background.png);"></div>
+        </div>
+
+        <div class="row">
+            <div class="content1 col-md-12 col-lg-12 col-xl-6 ps-5 pt-5 pb-5">
+                <h2 class="firsth2">One in Three See <em>UFOs</em> as Extraterrestrial</h2>
+                <p class="textone">About 30% of Americans say unidentified flying objects are probably extraterrestrial in origin. Others
+                    interpret the same sightings very differently, pointing to natural phenomena, military technology or acknowledging
+                    that the evidence is inconclusive. These differences highlight how people rely on personal experience, trust in
+                    scientific or government explanations and their general outlook on the unknown when forming opinions about flying saucers.
+                    For some, the idea of alien visitors seems plausible given the vastness of the universe, while others
+                    prefer explanations grounded in known technology or atmospheric events. The same report can be seen as proof,
+                    coincidence or confusion, depending on how individuals interpret the available information to find.</p>
+            </div>
+            <div class="content1 col-md-12 col-lg-12 col-xl-6 pt-5 text-center">
+                <img class="aliens" src="Aliens.png" alt="aliens">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 col-lg-12 col-xl-6 pt-5 pb-4">
+                <img class="usa" src="USA.png" alt="usaimage">
+            </div>
+            <div class=" col-md-12 col-lg-12 col-xl-6 pt-5 pb-5 pe-5">
+                    <h2>Americans View the Idea of Life in <em>Space</em></h2>
+                    <p class="text1">More than half believe aliens probably or definitely exist somewhere beyond Earth. This
+                        majority reflects a growing openness to the possibility of life outside of our planet, rather than a unusual or bizzare
+                        belief. Opinions still vary on whether extraterrestrials have visited Earth or what UFO sightings might represent,
+                        but belief itself remains relatively common. These attitudes appear to be shaped by a combination of scientific
+                        discovery, media influence and the natural human curiosity about what may exist elsewhere. Together, these
+                        perspectives illustrate how the unknown continues to shape opinions across society today, influence future
+                        expectations and conversations.</p>
+                    <p class="text1">Survey responses show that beliefs about extraterrestrials are not limited to a single explanation.
+                        Some respondents say unidentified flying objects are likely caused by natural phenomena or human technology, while
+                        others think the sightings could involve something beyond current scientific understanding. A significant share of
+                        participants remain uncertain, reflecting the lack of clear evidence and the wide range of interpretations
+                        surrounding these reports. This variation highlights how people rely on different sources of information when
+                        forming their views. Now looking ahead, 42% expect humans to make contact with extraterrestrials within the
+                        next 100 years.</p>
+                    <p class="text1">Not all expectations are serious, 29% of Americans even think extraterrestrials might have a sense of
+                        humor, suggesting some imagine encounters as less threatening or also lighthearted to a extent.</p>
+            </div>
+        </div>
+
+        <div class="row">
+                <div class="content2 col-md-12 col-lg-12 col-xl-4 p-5">
+                    <div class="col-12 text-center">
+                        <h3>Advanced <em>Technology</em> Expected</h3>
+                        <p class="text2">Many people imagine extraterrestrial life as more technologically advanced than humans. In one study,
+                        about 65% said alien civilizations would likely surpass human technology, while the rest believed they would be
+                        about the same or less advanced. This reflects a perception of extraterrestrials as more developed or intelligent
+                        than humanity. Some also assume such civilizations would remain hidden from Earth, suggesting caution, superiority
+                        or strategic advantage, shaping expectations about how contact might unfold in the future for humanity as a species.</p>
+                    </div>
+                    <div class=" col-12 pt-2">           
+                        <canvas id="myChart1" height="200"></canvas>
+                    </div>
+                </div>
+                <div class="content2 col-md-12 col-lg-12 col-xl-4 pt-5 border-start border-end">
+                    <div class="col-12 pb-1 text-center">
+                        <h3 class="greenh3">Public Belief (%)</h3> 
+                     </div>
+                    <div class="col-12 pb-5">
+                        <canvas id="myChart3" height="315"></canvas>
+                    </div>
+                    <div class="col-12">
+                        <h3 class="greenh3 text-center"> Amongst Americans</h3>
+                        <p class="yougov text-center"> All Stats From YouGov: Jamie Ballard - Data Journalist</p>
+                </div>
+        </div>
+
+            <div class="content2 col-md-12 col-lg-12 col-xl-4 p-5">
+                <div class="col-12 text-center">
+                    <h3>Mixed Views on Their <em>Intentions</em></h3>
+                    <p class="text2">Many people imagine different possibilities when it comes to how extraterrestrials might behave. In one
+                    study, about 43% said aliens would likely come in peace, while a slightly larger share believed contact could bring
+                    harm or new diseases. This reflects a balance between optimism and concern, rather than a single dominant
+                    expectation. Some imagine communication or cooperation, while others expect caution or unintended consequences.
+                    These mixed views show how people often associate alien contact with both opportunity and risk, depending on how
+                    they interpret the unknown.</p>
+                </div>
+                <div class="col-12 pt-2">
+                    <canvas id="myChart2" height="200"></canvas>
+                </div>
+            </div>
+
+        <script>
+            const ctx = document.getElementById('myChart1');
+
+            new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: ['More Advanced', 'Same or Less'],
+                datasets: [{
+                data: [65, 35],
+                backgroundColor: ['#3dea24', '#000000'],
+                borderColor: '#fff',
+                borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                legend: { display: false },
+                tooltip: { enabled: true }
+                },
+                cutout: '10%'
+            }
+            });
+        </script>
+        
+        <script>
+            const ctx2 = document.getElementById('myChart2');
+
+            new Chart(ctx2, {
+            type: 'doughnut',
+            data: {
+                labels: ['Come in Peace', 'Bring Disease'],
+                datasets: [{
+                data: [43, 57],
+                backgroundColor: ['#3dea24', '#000000'],
+                borderColor: '#fff',
+                borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                legend: { display: false },
+                tooltip: { enabled: true }
+                },
+                cutout: '10%'
+            }
+            });
+        </script>
+
+        <script>       
+             const ctx3 = document.getElementById('myChart3');
+
+            new Chart(ctx3, {
+            type: 'radar',
+            data: {
+                labels: [
+                'Advanced Tech',
+                'Stay Hidden',
+                'Bring Diseases',
+                'Communicate',
+                'Come in Peace'
+                ],
+                datasets: [{
+                data: [65, 66, 55, 50, 43],
+                backgroundColor: 'rgba(108, 255, 108, 0.15)',
+                borderColor: '#6cff6c',
+                borderWidth: 2,
+                pointBackgroundColor: '#6cff6c'
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+            plugins: {
+                legend: { display: false },
+                tooltip: { enabled: false }
+            },
+                scales: {
+                r: {
+                    beginAtZero: true,
+                    max: 80,
+
+                    grid: {
+                    circular: true,
+                    color: 'rgb(255,255,255)'
+                    },
+                    angleLines: {
+                    color: 'rgb(255,255,255)'
+                    },
+                    pointLabels: {
+                    color: '#ffffff',
+                    font: {
+                        size: 12
+                    }
+                    },
+                    ticks: {
+                    color: '#ffffff',
+                    backdropColor: 'transparent'
+                    }
+                }
+                }
+            }
+            });
+        </script>
+
+    </div>
 </body>
 
 </html>
