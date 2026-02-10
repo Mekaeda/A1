@@ -3,6 +3,7 @@ body {
 
 }
 
+
 @media screen and (max-width: 1200px) {
     h1 {font-size: 40.3px !important; text-align: center !important; padding-right: 48px !important;}
     .herotext {text-align: center !important; padding-right: 48px !important;}
@@ -14,9 +15,7 @@ body {
     .usa {margin-bottom: 100px !important; padding-left: 48px !important;}
     p {text-align: center !important;}
     .text2 {font-size: 14px !important; max-width: none !important;}
-    .content2 {border: none !important;}
   }
-
 
 .hero {
     background-color: black;
