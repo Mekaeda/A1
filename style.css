@@ -1,6 +1,5 @@
 body {
     cursor: url("Alien\ Cursor.png"), auto;
-
 }
 
 @media screen and (max-width: 1200px) {
@@ -54,7 +53,6 @@ h1 {
 h2 {
     font-size: 38px !important;
     padding-bottom: 15px;
-
 }
 
 h3{
@@ -73,7 +71,6 @@ em {
 .textone {
     max-width: 700px;
     line-height: 1.6;
-
 }
 
 .text1 {
